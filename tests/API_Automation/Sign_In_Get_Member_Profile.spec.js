@@ -17,7 +17,7 @@ test.describe('Auth0 Token Retrieval', () => {
       access_token = await getToken(request)
     });
 
-  test.beforeAll('should retrieve the auth0 token successfully', async ({request }) => {
+  test.beforeAll('Should retrieve the auth0 token successfully', async ({request }) => {
     const response = await request.post('https://gateway-dev-sonesta.azure-api.net/guest/graphql', {
       headers: getRequestHeaders(access_token),
       data: getAuthTokenRequest(),

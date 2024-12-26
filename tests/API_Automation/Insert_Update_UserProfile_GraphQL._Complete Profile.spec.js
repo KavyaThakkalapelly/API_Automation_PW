@@ -7,7 +7,7 @@ const {saveState}= require('../../utils/shared-state')
 const {getCompleteProfileRequest} = require('../../models/complete-profile-request');
 const{createCompleProfileTestData}= require('../../utils/user-test-data')
 
-test.describe('Testcase Title:Insert or  Update User Profile and Complete Profile', async () => {
+test.describe('Insert or  Update User Profile and Complete Profile', async () => {
     var access_token
     test.beforeAll('token generation', async ({ request }) => {
         access_token = await getToken(request)
